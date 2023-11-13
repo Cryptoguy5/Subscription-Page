@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Page</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .main { 
+            height: 60%;
+            width: 50%;
+            background-color: rgb(255, 98, 0);
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .secondary {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(230, 224, 218);
+            text-align: center;
+
+        }
+
+
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+
+        .a {
+            font-size: 36px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            border: 1px solid rgb(164, 132, 101);
+            box-shadow: 0px 0px 10px;
+            padding: 10px;
+            background-color: rgb(230, 224, 218);
+            background: linear-gradient(180deg, rgb(230, 224, 218), rgb(244, 242, 241));
+        }
+
+        .subscribe {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .checkbox {
+            margin-right: 20px;
+            padding: 0;
+            display: inline;
+        }
+
+        .privacy {
+            margin-right: 50px;
+            font-weight: lighter;
+            color: grey;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(255, 98, 0);
+            border: none;
+            border-radius: 50px;
+            width: 40%;
+            font-size: 24px;
+            background: linear-gradient(180deg, rgb(255, 98, 0), rgb(159, 63, 3));
+            padding: 10px;
+        }
+
+        @media (max-width: 680px) {
+            .main {
+                width: 100%;
+            }
+            
+            .a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="secondary">
+           <h1>Subscribe to our Newsletter</h1>
+           <p>To be updated with all the latest products</p>
+           <form>
+            <fieldset>
+                <input class="a" type="text" placeholder="Your Name">
+                <input class="a" type="text" placeholder="Email Address">
+                <div class="subscribe">
+                    <input checked  class="checkbox" type="checkbox">
+                    <p class="privacy">I agree with the Privacy Policy</p>
+                    <button type="button">Subscribe</button>
+                </div>
+            </fieldset>
+           </form>
+       </div>
+    </div>
+</body>
+</html>
